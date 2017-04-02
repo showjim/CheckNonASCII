@@ -113,6 +113,7 @@ def cur_file_dir():
         return os.path.dirname(path)
 '''
 
+
 # to check the VBT header 'Option Explicit'
 def check_header():
     pass
