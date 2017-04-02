@@ -31,7 +31,7 @@ def main():
             tmpstr = tmpstr + '\n' + result
 
     # print(tmpstr)
-    output = open(dir + r'\output.txt', 'w+')
+    output = open(dir + r'/output.txt', 'w+')
     # output.write(tmpstr)
     if tmpstr != '':
         output.write(tmpstr)
@@ -55,7 +55,7 @@ def find_ASCII_files(filepath):
 
 # to output the index of line with non-ASCII char
 def print_output_file(files_array, dir):
-    dir = dir + r'\output.csv'
+    dir = dir + r'/output.csv'
     with open(dir, mode='w') as csvfile:
         for file in files_array:
             csvfile.write(file)
@@ -112,6 +112,7 @@ def cur_file_dir():
     elif os.path.isfile(path):
         return os.path.dirname(path)
 '''
+
 
 # to check the VBT header 'Option Explicit'
 def check_header():
